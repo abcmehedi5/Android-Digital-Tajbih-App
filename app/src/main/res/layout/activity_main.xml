@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20px"
+    android:background="#66b3ff"
+    android:id="@+id/tajbiContainer"
+
+    >
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+<!--image-->
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:layout_gravity="center"
+           android:src="@drawable/bismillah" />
+
+       <TextView
+           android:id="@+id/countText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="40px"
+           android:height="300px"
+           android:background="#D1EAFA"
+           android:fontFamily="sans-serif-light"
+           android:gravity="center"
+           android:text="0"
+           android:textSize="60sp"
+
+           />
+
+       <Button
+           android:id="@+id/btnAdd"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20px"
+           android:drawableLeft="@drawable/plus1"
+           android:drawableRight="@android:drawable/btn_star_big_on"
+           android:padding="10dp"
+           android:text="plus ONE"
+           android:textSize="20dp"
+           app:backgroundTint="#671E44" />
+
+       <Button
+           android:id="@+id/btnSub"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20px"
+           android:backgroundTint="#ff4da6"
+           android:drawableLeft="@drawable/minus1"
+           android:drawableRight="@android:drawable/btn_star_big_on"
+           android:padding="10dp"
+           android:text="minus ONE"
+
+           android:textSize="20dp" />
+
+       <Button
+           android:id="@+id/btnReset"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20px"
+           android:drawableLeft="@drawable/zero"
+           android:drawableRight="@android:drawable/btn_star_big_on"
+           android:padding="10dp"
+           android:text="Reset"
+           android:textSize="20dp" />
+
+
+<!--       footer section start-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="30"
+    android:gravity="center"
+    android:layout_marginTop="18px"
+    >
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="সুবহানাল্লাহ "
+        android:textSize="15dp"
+        android:background="#751aff"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_weight="10"
+        android:layout_margin="5px"
+
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="আলহামদুলিল্লাহ "
+        android:textSize="15dp"
+        android:background="#333300"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_weight="10"
+        android:layout_margin="5px"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="আল্লাহ হুয়াকবার "
+        android:textSize="15dp"
+        android:background="#ff8c1a"
+        android:gravity="center"
+        android:layout_weight="10"
+        android:layout_margin="5px"
+        android:padding="4px"
+        android:textColor="#fff"
+        />
+
+
+
+</LinearLayout>
+
+       <!--footer section end-->
+
+   </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
